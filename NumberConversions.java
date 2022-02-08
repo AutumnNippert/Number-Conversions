@@ -30,8 +30,8 @@ public class NumberConversions{
      * @param dec decimal value
      * @return binary value
      */ 
-    public static int binToDec(String base2Value) {
-        char[] binaryDigits = base2Value.toCharArray();
+    public static int binToDec(String bin) {
+        char[] binaryDigits = bin.toCharArray();
         int value = 0;
         int powCount = 0;
 
