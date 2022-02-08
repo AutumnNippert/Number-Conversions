@@ -26,7 +26,7 @@ public class NumberConversions{
     }
 
     /**
-     * Converts binary String to decimal int
+     * Converts binary String to decimal int.
      * @param bin binary value
      * @return decimal value
      */ 
