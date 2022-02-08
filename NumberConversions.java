@@ -27,8 +27,8 @@ public class NumberConversions{
 
     /**
      * Converts binary String to decimal int
-     * @param dec decimal value
-     * @return binary value
+     * @param bin binary value
+     * @return decimal value
      */ 
     public static int binToDec(String bin) {
         char[] binaryDigits = bin.toCharArray();
