@@ -37,7 +37,7 @@ public class NumberConversions{
 
         try{
             for (int i = binaryDigits.length-1; i > 0; i--) {
-                value += (Math.pow(2, powCount) * Integer.parseInt(Character.toString(binaryDigits[i])));
+                value += (Math.pow(2, powCount) * Character.getNumericValue(binaryDigits[i]));
             }
         } catch (NumberFormatException e) {
             e.printStackTrace();
