@@ -29,6 +29,7 @@ public class NumberConversions{
      * Converts binary String to decimal int.
      * @param bin binary value
      * @return decimal value
+     * This doesn't work lmao
      */ 
     public static int binToDec(String bin) {
         char[] binaryDigits = bin.toCharArray();
