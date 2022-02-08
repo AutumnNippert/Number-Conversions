@@ -24,4 +24,24 @@ public class NumberConversions{
 
         return revStr;
     }
+
+    /**
+     * Converts binary String to decimal int
+     * @param dec decimal value
+     * @return binary value
+     */ 
+    public static int binToDec(String base2Value) {
+        char[] binaryDigits = base2Value.toCharArray();
+        int value = 0;
+        int powCount = 0;
+
+        try{
+            for (int i = binaryDigits.length-1; i > 0; i--) {
+                value += (Math.pow(2, powCount) * Integer.parseInt(Character.toString(binaryDigits[i])));
+            }
+        } catch (NumberFormatException e) {
+            e.printStackTrace();
+        }
+        return value;
+    }
 }
